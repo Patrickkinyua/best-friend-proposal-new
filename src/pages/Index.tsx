@@ -10,8 +10,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen">
-      <ModeToggle />
+    <div className="relative min-h-screen font-sans">
       <Sparkles />
       <HeroSection />
       <TimelineSection />
@@ -20,6 +19,7 @@ const Index = () => {
       <ReasonsSection />
       <ProposalSection />
       <FooterSection />
+      <ModeToggle />
     </div>
   );
 };

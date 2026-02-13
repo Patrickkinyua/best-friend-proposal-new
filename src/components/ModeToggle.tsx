@@ -7,9 +7,9 @@ export function ModeToggle() {
 
     return (
         <Button
-            variant="ghost"
+            variant="outline"
             size="icon"
-            className="fixed top-4 right-4 z-[100] rounded-full bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/40 transition-all"
+            className="fixed top-6 right-6 z-[999] rounded-full bg-background/80 backdrop-blur-md border-2 border-primary/20 shadow-xl hover:scale-110 mb-transition-all"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

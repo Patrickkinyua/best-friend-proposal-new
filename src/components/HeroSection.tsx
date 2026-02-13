@@ -8,13 +8,13 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
-      {/* Overlay */}
+      {/* Overlay for contrast */}
       <div
-        className="absolute inset-0 bg-background/40 backdrop-blur-[2px]"
+        className="absolute inset-0 bg-black/50 backdrop-blur-[1px]"
         style={{ maskImage: "linear-gradient(to bottom, black 85%, transparent 100%)", WebkitMaskImage: "linear-gradient(to bottom, black 85%, transparent 100%)" }}
       />
-      {/* Glow */}
-      <div className="absolute inset-0 pointer-events-none" style={{ background: "var(--gradient-glow)" }} />
+      {/* Radial vignette for extra focus */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.4)_100%)]" />
 
       <div className="relative z-10 max-w-3xl animate-fade-up">
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-white mb-6 drop-shadow-2xl">
