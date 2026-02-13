@@ -7,10 +7,12 @@ import ReasonsSection from "@/components/ReasonsSection";
 import ProposalSection from "@/components/ProposalSection";
 import FooterSection from "@/components/FooterSection";
 import { ModeToggle } from "@/components/ModeToggle";
+import StatusChip from "@/components/StatusChip";
 
 const Index = () => {
   return (
     <div className="relative min-h-screen font-sans">
+      <StatusChip />
       <Sparkles />
       <HeroSection />
       <TimelineSection />
