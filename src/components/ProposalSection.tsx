@@ -137,7 +137,7 @@ const ProposalSection = () => {
             <p className="text-lg font-medium text-foreground">✨ Monicah & Cedella — Together Forever ✨</p>
 
             {/* Audio Controls */}
-            <div className="mt-10 flex items-center justify-center gap-6 bg-white/20 backdrop-blur-md py-3 px-6 rounded-full border border-white/30 animate-fade-in-slow">
+            <div className="mt-10 flex items-center justify-center gap-6 bg-foreground/10 backdrop-blur-md py-3 px-6 rounded-full border border-foreground/10 animate-fade-in-slow">
               <button
                 onClick={togglePlay}
                 className="hover:scale-110 transition-transform p-2 rounded-full hover:bg-white/10"

@@ -16,11 +16,17 @@ const HeroSection = () => {
       {/* Glow */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: "var(--gradient-glow)" }} />
 
-      <div className="relative z-10 max-w-2xl animate-fade-up">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-foreground mb-6">
-          Cedella… To More Years of Friendship 🥂
+      <div className="relative z-10 max-w-3xl animate-fade-up">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-white mb-6 drop-shadow-2xl">
+          <span className="block mb-2 opacity-90">Cedella…</span>
+          <span
+            className="inline-block animate-back-and-forth text-pink-200"
+            style={{ fontFamily: "'Dancing Script', cursive" }}
+          >
+            To More Years of Friendship 🥂
+          </span>
         </h1>
-        <p className="text-lg sm:text-xl text-muted-foreground mb-4 leading-relaxed">
+        <p className="text-lg sm:text-xl text-white/90 mb-4 leading-relaxed font-medium drop-shadow-lg">
           Some friendships turn into family. Ours turned into something unforgettable.
         </p>
         <p className="text-sm text-muted-foreground italic mb-10">– From Monicah</p>

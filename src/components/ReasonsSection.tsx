@@ -37,7 +37,7 @@ const reasons = [
 
 const ReasonsSection = () => {
     return (
-        <section className="py-24 px-6 bg-white/30 backdrop-blur-md">
+        <section className="py-24 px-6 bg-secondary/10 backdrop-blur-md">
             <div className="max-w-2xl mx-auto">
                 <ScrollReveal>
                     <div className="text-center mb-16">
@@ -47,15 +47,15 @@ const ReasonsSection = () => {
                 </ScrollReveal>
 
                 <ScrollReveal delay={200}>
-                    <div className="glass-card rounded-3xl p-6 sm:p-10 border-pink-100">
+                    <div className="glass-card rounded-3xl p-6 sm:p-10 border-border/50">
                         <Accordion type="single" collapsible className="w-full space-y-4">
                             {reasons.map((reason, index) => (
                                 <AccordionItem
                                     key={index}
                                     value={`item-${index}`}
-                                    className="border-b border-pink-50/50 last:border-0"
+                                    className="border-b border-border/20 last:border-0"
                                 >
-                                    <AccordionTrigger className="hover:no-underline hover:bg-pink-50/50 rounded-xl px-4 transition-all">
+                                    <AccordionTrigger className="hover:no-underline hover:bg-accent/50 rounded-xl px-4 transition-all">
                                         <div className="flex items-center gap-4 text-left">
                                             <div className="shrink-0 animate-pulse-soft">
                                                 {reason.icon}
